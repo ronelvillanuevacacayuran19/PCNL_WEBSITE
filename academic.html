@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css folder/nagpudot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PCNL WEBSITE</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="academic.html">Academic Programs</a></li>
+          <li><a href="facultie.html">Faculty & Staff</a></li> 
+          <li><a href="announcement.html">Announcements </a></li>
+          <li><a href="contactpage.html">Contact Page</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="signup.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <style>
+           
+      body {
+        background-image: url('skwelahan.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size:cover;
+      }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div id="slide">
+            <div class="item" style="background-image: url(BSA.jpg);">
+                <div class="content">
+                    <div class="name">BSA</div>
+                    <div class="des">Provides a strong foundation in financial accounting, auditing, and taxation.
+
+                        Equips students with the skills necessary to become Certified Public Accountants and financial experts.
+                        
+                        Emphasizes analytical skills and ethical practices in financial management.</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(BSBA.jpg);">
+                <div class="content">
+                    <div class="name">BSBA</div>
+                    <div class="des">Focuses on developing leadership, entrepreneurial, and management skills.
+
+                        Prepares students for various roles in the business sector, emphasizing practical training and real-world applications.
+                        
+                        Offers specializations in areas such as Human Resource Development Management, Financial Management, and Marketing Management.</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(BSCRIM.jpg);">
+                <div class="content">
+                    <div class="name">BSCRIM</div>
+                    <div class="des">Concentrates on law enforcement, criminal justice, and forensic science.
+
+                        Aims to mold graduates into competent professionals dedicated to public safety and crime prevention.
+                        
+                        Provides insights into the legal system and the societal impacts of crime.</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(BEE.jpg);">
+                <div class="content">
+                    <div class="name">BEE</div>
+                    <div class="des">Prepares future educators with knowledge of teaching methodologies and child development.
+                        Focuses on creating effective learning environments and fostering student engagement.
+                        Emphasizes the importance of nurturing the next generation of learners through innovative teaching practices.</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(BSIT.jpg);">
+                <div class="content">
+                    <div class="name">BSIT</div>
+                    <div class="des">Focuses on essential skills in programming, networking, database management, and emerging technologies.
+
+                        Prepares students for careers in the digital landscape, emphasizing both theoretical knowledge and practical application.
+                        
+                        Encourages innovation and adaptability in a rapidly changing technological environment.</div>
+                    <button>See more</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+      document.getElementById('next').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
+    </script>
+</body>
+</html>

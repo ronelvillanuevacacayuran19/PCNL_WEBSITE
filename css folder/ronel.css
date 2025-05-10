@@ -1,0 +1,42 @@
+body {
+    background-image: url('skwelahan.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    color:black;
+    
+  }
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;
+}
+.bg-1 { 
+  background-color: #1abc9c;
+ color: #ffffff;
+}
+.bg-2 { 
+  background-color:darkblue;
+  color:white;
+}
+.bg-3 { 
+  
+  background-color: #ffffff;
+  color: black;
+}
+.bg-4 { 
+ 
+  background-color: #ffffff;
+  color: black;
+}
+.container-fluid bg-1 text-center{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+main {
+  flex: 1; 
+}
+
+footer {
+  background-color: #222; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
